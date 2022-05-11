@@ -1,1 +1,9 @@
-<h1>edit</h1>
+<%= form_with model: @sentence, url: sentence_path, local:true do |f| %>
+  <p>タイトル</p>
+  <%= f.text_field :title, class: "rounded" %>
+  <p>説明？本文？</p>
+  <%= f.text_field :introduction, class: "rounded" %>
+  <p>参考文献</p>
+  <%= f.text_field :references, class: "rounded" %>
+  <%= f.submit "編集内容を保存", class: "btn btn-outline-success btn-success w-auto mx-auto size" %>
+<% end %>
