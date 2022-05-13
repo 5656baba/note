@@ -1,19 +1,28 @@
-<% @notes.each do |note|%>
-  <%= note.title %>
-  <%= note.introduction %>
-<% end %>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-2">
+     <p>ジャンル検索</p>
+    </div>
+    <div class="col-md-8 col-12 mt-5">
+      <% @notes.each do |note|%>
+        <%= note.title %>
+        <%= note.introduction %>
+      <% end %>
 
-<h1 class="jquery">Hello jQuery!</h1>
+      <h1 class="jquery">Hello jQuery!</h1>
 
-<p>人生に役立つ情報をまとめるサイト</p>
-<p>wikipediaみたいな感じ</p>
-<p>ジャンル別に分ける</p>
-<p>検索機能つける</p>
-<p>ジャンル検索もつける</p>
-<p>vue.js react あたり使う</p>
-<p>検索は非同期で何件あるか分かるようにしたい</p>
-<p>情報源のリンク先貼れるようにする</p>
-<p>タイトル、本文（複数追加できるようにする）</p>
-<p>聖杯レイアウト、左側にジャンル検索、ヘッダーに検索バー、右側に何かしら</p>
-<p>ジャンルごとに何件か表示させる（ジャンル検索）</p>
-<p>DB:ジャンル（name）、本文（title,introduction,参考文献）</p>
+      <p>人生に役立つ情報をまとめるサイト</p>
+      <p>wikipediaみたいな感じ</p>
+      <p>ジャンル別に分ける</p>
+      <p>検索機能つける</p>
+      <p>ジャンル検索もつける</p>
+      <p>vue.js react あたり使う</p>
+      <p>検索は非同期で何件あるか分かるようにしたい</p>
+      <p>情報源のリンク先貼れるようにする</p>
+      <p>タイトル、本文（複数追加できるようにする）</p>
+      <p>聖杯レイアウト、左側にジャンル検索、ヘッダーに検索バー、右側に何かしら</p>
+      <p>ジャンルごとに何件か表示させる（ジャンル検索）</p>
+      <p>DB:ジャンル（name）、本文（title,introduction,参考文献）</p>
+    </div>
+  </div>
+</div>
