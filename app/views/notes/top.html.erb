@@ -1,7 +1,14 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-md-2">
-     <p>ジャンル検索</p>
+      <%= render "genres/show", genre: @genre %>
+      <table class="table">
+        <% @genres.each do |genre| %>
+          <tr>
+            <td><%= genre.name %></td>
+          </tr>
+        <% end %>
+      </table>
     </div>
     <div class="col-md-8 col-12 mt-5">
       <%# @notes.each do |note|%>
@@ -31,7 +38,7 @@
       <p>DB:ジャンル（name）、本文（title,introduction,参考文献）</p>
       <div>
         <p>show</p>
-        <p>チームラボの開発課題にする、24日まで</p>
+        <p>24日まで</p>
       </div>
     </div>
     <div class="col-md-2">

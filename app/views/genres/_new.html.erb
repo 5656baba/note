@@ -1,0 +1,6 @@
+<% genres.each do |genre| %>
+  <tr>
+    <td><%= genre.name %></td>
+    <td><%= link_to "削除", genre_path(genre), method: :delete, remote: true %></td>
+  </tr>
+<% end %>
